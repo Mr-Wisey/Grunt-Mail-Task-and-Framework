@@ -1,0 +1,144 @@
+/* ––––––––––––––––– SETTING ––––––––––––––––– */
+
+
+/* MAIL WIDHT AND MEDIAQUERIES */
+$nl-widht: 600px;
+$breakpoint-1: 620px;
+$breakpoint-2: 520px;
+
+
+/* BORDER-RADIUS */
+$border-raduis: 20px;
+
+/* DEFAULT MARGIN BOTTOM ON COLLAPSE */
+$h-space: 20px;
+
+/* ROW WIDTH ON SIZE-S/M */
+$row-width-m: 92%;
+$row-width-s: 100%;
+
+
+
+/* ––––––––––––––––– COLOR-SETTINGS ––––––––––––––––– */
+
+
+/* ADD YOUR COLORS HERE */
+$colors: (
+	black:      #000001,
+	white:      #FFFFFE,
+	font-black: #414042,
+    brown:      #8c8274,
+	brown-bg:   #e0dede,
+);
+
+@function color($key) {
+  @if not map-has-key($colors, $key) {
+    @warn "Key `#{$key}` not found in $colors map.";
+  }
+  @return map-get($colors, $key);
+}
+
+
+/* ––––––––––––––––– FONT-SETTINGS ––––––––––––––––– */
+
+
+/* FONTS -> SET THE FONTS VARIABLES WITH FALLBACK */
+$arial: Arial, sans-serif;
+$helvetica: Helvetica, sans-serif;
+$verdana: "Verdana, sans-serif";
+$times: 'Times New Roman', Times, serif;
+
+
+/* ––––––––––––––––– WEBFONTS ––––––––––––––––– */
+@media (max-width: 3000px) {
+    @media screen { /* hides this rule from unsupported clients */ 
+        .roboto {
+           font-family: "Roboto", arial, sans-serif !important;
+        }
+    }
+}
+
+
+
+/* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
+/* 	YOUT CAN USE 
+	Attributes: font-size, font-size-md, font-size-sm, font-color, 
+		font-weight, line-height, line-height-md, line-height-sm and letter-spacing
+	values: font-variable, px, %, em, color(xxxx)
+*/
+$fontthemes: (
+	lead-1: (
+		font-family: $arial,
+		font-size: 30px, 
+		font-weight: 300, 
+		font-size-md: 24px, 
+		font-size-sm: 20px,
+		line-height: 150%, 
+		line-height-md: 120%, 
+		line-height-sm: 100%, 
+		font-color: color(brown)
+    ),
+	lead-2: (
+		font-family: $arial,
+		font-size: 18px, 
+		font-weight: 300, 
+		line-height: 150%, 
+		font-color: color(font-black)
+    ),
+	lead-3: (
+		font-family: $arial, 
+		font-size: 18px, 
+		font-style: italic, 
+		font-weight: bold, 
+		font-color: color(brown)
+    ),
+	outside: (
+		font-family: $arial, 
+		font-size: 12px, 
+		letter-spacing: 0.5px, 
+		font-weight: 300, 
+		font-color: color(black)
+    ),
+	basic-1: (
+		font-family: $arial, 
+		font-size: 14px, 
+		font-weight: 300,
+		line-height: 150%, 
+		font-color: color(font-black)
+    ),
+	button-text-1:	(
+		font-familiy: arial,
+		font-weight: bold,
+		font-style: italic,
+		font-color: color(brown),
+		font-size: 14px
+    ),
+    button-text-2:	(
+		font-familiy: arial,
+		font-weight: bold,
+		font-style: italic,
+		font-color: color(brown),
+		font-size: 12px
+    ),
+);
+
+
+
+
+
+/* ––––––––––––––––– BUTTON-SETTINGS ––––––––––––––––– */
+
+
+
+/* .button */
+$btn-color: color(brown-bg);
+$btn-border-radius: 15px;
+$btn-padding-h: 10px;
+$btn-padding-v: 5px;
+
+/* .button-2 */
+$btn2-color: color(brown-bg);
+$btn2-border-radius: 15px;
+$btn2-padding-h: 5px;
+$btn2-padding-v: 3px;
+

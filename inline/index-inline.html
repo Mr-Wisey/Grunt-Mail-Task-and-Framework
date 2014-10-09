@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//DE" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Responsive Email-Framwork</title>
+	
+	
+</head>
+<body style="margin: 0; padding: 0; width: 100%"><style type="text/css">
+@font-face {
+font-family: 'Roboto'; font-style: normal; font-weight: 300; src: local('Roboto Light'), local('Roboto-Light'), url('http://fonts.gstatic.com/s/roboto/v14/Hgo13k-tfSpn0qi1SFdUfaCWcynf_cDxXwCLxiixG1c.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: normal; font-weight: 400; src: local('Roboto Regular'), local('Roboto-Regular'), url('http://fonts.gstatic.com/s/roboto/v14/zN7GBFwfMP4uA6AR0HCoLQ.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: normal; font-weight: 500; src: local('Roboto Medium'), local('Roboto-Medium'), url('http://fonts.gstatic.com/s/roboto/v14/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: normal; font-weight: 700; src: local('Roboto Bold'), local('Roboto-Bold'), url('http://fonts.gstatic.com/s/roboto/v14/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: italic; font-weight: 300; src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('http://fonts.gstatic.com/s/roboto/v14/7m8l7TlFO-S3VkhHuR0at50EAVxt0G0biEntp43Qt6E.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: italic; font-weight: 400; src: local('Roboto Italic'), local('Roboto-Italic'), url('http://fonts.gstatic.com/s/roboto/v14/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: italic; font-weight: 500; src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('http://fonts.gstatic.com/s/roboto/v14/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: italic; font-weight: 700; src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('http://fonts.gstatic.com/s/roboto/v14/t6Nd4cfPRhZP44Q5QAjcC50EAVxt0G0biEntp43Qt6E.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: normal; font-weight: 300; src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v14/Hgo13k-tfSpn0qi1SFdUfaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: normal; font-weight: 400; src: local('Roboto Regular'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v14/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: normal; font-weight: 500; src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v14/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: normal; font-weight: 700; src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v14/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: italic; font-weight: 300; src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v14/7m8l7TlFO-S3VkhHuR0at50EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: italic; font-weight: 400; src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v14/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: italic; font-weight: 500; src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v14/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+@font-face {
+font-family: 'Roboto'; font-style: italic; font-weight: 700; src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v14/t6Nd4cfPRhZP44Q5QAjcC50EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+}
+body {
+margin: 0; padding: 0; width: 100%;
+}
+img {
+display: block !important;
+}
+@media screen and (max-width: 3000px) {
+  .roboto {
+    font-family: "Roboto", arial, sans-serif !important;
+  }
+  .roboto {
+    font-family: "Roboto", arial, sans-serif !important;
+  }
+  .roboto {
+    font-family: "Roboto", arial, sans-serif !important;
+  }
+}
+@media (max-width: 620px) {
+  .lead-1 {
+    font-size: 24px !important;
+  }
+  .lead-1 {
+    line-height: 120% !important;
+  }
+  .row {
+    width: 92% !important; margin-left: 0 !important; margin-right: 0 !important;
+  }
+  [class*='col-']:not(.keep-img) img {
+    width: 100%; height: auto !important;
+  }
+}
+@media (max-width: 520px) {
+  td .lead-1 {
+    font-size: 20px !important;
+  }
+  td .lead-1 {
+    line-height: 100% !important;
+  }
+  td .align-sm-left {
+    text-align: left !important;
+  }
+  td .align-sm-center {
+    text-align: center !important;
+  }
+  table.row {
+    width: 100% !important;
+  }
+  [class*='col-'] {
+    display: block !important; width: 100% !important;
+  }
+  .keep-img-sm img {
+    width: inherit !important; height: auto !important;
+  }
+  td .pad-sm-left-20 {
+    padding-left: 20px !important;
+  }
+  td .pad-sm-right-0 {
+    padding-right: 0px !important;
+  }
+  td .pad-sm-right-20 {
+    padding-right: 20px !important;
+  }
+  td .pad-sm-bottom-10 {
+    padding-bottom: 10px !important;
+  }
+  td .pad-sm-bottom-20 {
+    padding-bottom: 20px !important;
+  }
+  td .pad-sm-bottom-30 {
+    padding-bottom: 30px !important;
+  }
+}
+@media (max-width: 3000px) {
+  a[x-apple-data-detectors] {
+    color: inherit !important; text-decoration: none !important; font-size: inherit !important;
+  }
+}
+@media (max-width: 355px) {
+  img[alt="logo"] {
+    width: 100%;
+  }
+}
+</style>
+	<!--WRAPPER-->
+	<table class="body" border="0" cellpadding="0" cellspacing="0" style="background: #e0dede; margin: 0; padding: 0; width: 100%" bgcolor="#e0dede">
+		<tr>
+			<td align="center">
+
+
+				<!-- ROW UNSUBSCRIBE -->
+				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+					<tr>
+						<td class="row-padding" align="center" style="padding-bottom: 10px; padding-top: 10px">
+							<table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
+								<tr>
+									<!-- COL -->
+									<td class="col-12-span pad-bottom-20 pad-top-10 pad-sm-left-20 pad-sm-right-20" valign="top" align="center" style="box-sizing: border-box; padding-bottom: 20px; padding-top: 10px; width: 100%">
+										<a class="outside roboto" style="color: #000001; font-family: Arial, sans-serif; font-size: 12px; font-weight: 300; letter-spacing: 0.5px; text-decoration: none">Click here to view this message in a browser</a>
+									</td>
+									<!-- END COL -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END ROW -->
+
+
+				<!-- ROW LOGO -->
+				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+					<tr>
+						<td class="row-padding" align="center" style="padding-bottom: 10px; padding-top: 10px">
+							<table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
+								<tr>
+									<!-- COL -->
+									<td class="col-12-span pad-bottom-20 keep-img pad-left-20 pad-right-20" valign="top" align="center" style="box-sizing: border-box; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; width: 100%">
+										<!-- IMAGE-LINK -->
+										<a href="" style="line-height: 0; text-decoration: none">
+										<img alt="logo" src="http://placehold.it/315x80/efefef&amp;text=Your+Logo" width="315" border="0" style="display: block !important" />
+										</a>
+									</td>
+									<!-- END COL -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END ROW -->
+
+
+				<!-- ROW HEADER IMAGE -->
+				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+					<tr>
+						<td class="" align="center">
+							<table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
+								<tr>
+									<!-- COL -->
+									<td class="col-12-span bg-color-white pad-bottom-40 pad-sm-bottom-20" valign="top" align="left" style="background: #fffffe; box-sizing: border-box; padding-bottom: 40px; width: 100%" bgcolor="#fffffe">
+										<!-- IMAGE-LINK -->
+										<a href="#" style="line-height: 0; text-decoration: none" target="_blank">
+										<img alt="Header-Image" src="http://placehold.it/600x400/efefef&amp;text=Header-Image" width="600" border="0" style="display: block !important" />
+										</a>
+									</td>
+									<!-- END COL -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END ROW -->
+
+
+				<!-- ROW HEADER TEXT -->
+				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+					<tr>
+						<td class="" align="center">
+							<table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
+								<tr>
+									<!-- COL -->
+									<td class="col-12-span bg-color-white pad-left-40 pad-right-40 pad-sm-left-20 pad-sm-right-20" valign="top" align="left" style="background: #fffffe; box-sizing: border-box; padding-left: 40px; padding-right: 40px; width: 100%" bgcolor="#fffffe">
+										<!--ROWSPLIT-->
+										<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="lead-1 pad-bottom-40 pad-sm-bottom-20 roboto align-sm-left" valign="top" align="center" style="color: #8c8274; font-family: Arial, sans-serif; font-size: 30px; font-weight: 300; line-height: 150%; mso-line-height-alt: 150%; mso-margin-top-alt: 0; padding-bottom: 40px">
+													Your title comes here
+												</td>
+											</tr>
+										</table>
+										<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="align-sm-left pad-bottom-20 pad-sm-bottom-10 roboto lead-2" valign="top" align="center" style="color: #414042; font-family: Arial, sans-serif; font-size: 18px; font-weight: 300; line-height: 150%; mso-line-height-alt: 150%; mso-margin-top-alt: 0; padding-bottom: 20px">
+													Dear John Doe 
+												</td>
+											</tr>
+										</table>
+										<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="basic-1 pad-bottom-15 roboto" valign="top" align="left" style="color: #414042; font-family: Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 150%; mso-line-height-alt: 150%; mso-margin-top-alt: 0; padding-bottom: 15px">
+													Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+												</td>
+											</tr>
+										</table>
+										<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="pad-bottom-50" valign="top" align="right" style="padding-bottom: 50px">
+													<!-- BUTTON -->
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td align="right">
+																<table border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td align="center" class="button" style="-moz-border-radius: 15px; -webkit-border-radius: 15px; background: #e0dede; border-radius: 15px" bgcolor="#e0dede">
+																			<!--PADDING TABLE-->
+																			<table border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td class="pad-left-20 pad-right-20" valign="top" align="center" style="padding-left: 20px; padding-right: 20px">
+																						<a href="#" target="_blank" class="roboto button-text-1" style="-moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; border: 1px solid #e0dede; color: #8c8274; display: inline-block; font-size: 14px; font-style: italic; font-weight: bold; padding: 5px 10px; text-decoration: none">Button &gt;</a>
+																					</td>
+																				</tr>
+																			</table>
+																			<!--END PADDING-->
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- END BUTTON -->
+												</td>
+											</tr>
+										</table>
+										<!--END ROWSPLIT-->
+									</td>
+									<!-- END COL -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END ROW -->
+
+
+				<!-- ROW 2 COLUMNS -->
+				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+					<tr>
+						<td class="" align="center">
+							<table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
+								<tr>
+									<!-- COL -->
+									<td class="col-8-span bg-color-white pad-left-40 pad-right-40 pad-sm-left-20 pad-sm-right-20" valign="top" align="left" style="background: #fffffe; box-sizing: border-box; padding-left: 40px; padding-right: 40px; width: 66.666666666%" bgcolor="#fffffe">
+										<!--VERTICAL PADDING TABLE-->
+										<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="pad-bottom-50 pad-sm-bottom-20" valign="top" align="left" style="padding-bottom: 50px">
+													<!--ROWSPLIT-->
+													<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+														<tr>
+															<td class="lead-3 roboto pad-bottom-8" valign="top" align="left" style="color: #8c8274; font-family: Arial, sans-serif; font-size: 18px; font-style: italic; font-weight: bold">
+																Title Text
+															</td>
+														</tr>
+													</table>
+													<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+														<tr>
+															<td class="roboto basic-1" valign="top" align="left" style="color: #414042; font-family: Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 150%; mso-line-height-alt: 150%; mso-margin-top-alt: 0">
+																Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+																<!-- BUTTON 2 -->
+																<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td align="left" class="pad-top-15" style="padding-top: 15px">
+																			<table border="0" cellspacing="0" cellpadding="0">
+																				<tr>
+																					<td align="center" class="button-2" style="-moz-border-radius: 15px; -webkit-border-radius: 15px; background: #e0dede; border-radius: 15px" bgcolor="#e0dede">
+																						<!--PADDING TABLE-->
+																						<table border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="pad-left-20 pad-right-20" valign="top" align="center" style="padding-left: 20px; padding-right: 20px">
+																									<a href="#" target="_blank" class="roboto button-text-2" style="-moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; border: 1px solid #e0dede; color: #8c8274; display: inline-block; font-size: 12px; font-style: italic; font-weight: bold; padding: 3px 5px; text-decoration: none">Button &gt;</a>
+																								</td>
+																							</tr>
+																						</table>
+																						<!--END PADDING-->
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!-- END BUTTON -->
+															</td>
+														</tr>
+													</table>
+													<!--END ROWSPLIT-->
+												</td>
+											</tr>
+										</table>
+										<!--END VERTICAL PADDING-->
+									</td>
+									<td class="col-4-span bg-color-white pad-right-40 pad-sm-right-0 keep-img-sm" valign="top" align="left" style="background: #fffffe; box-sizing: border-box; padding-right: 40px; width: 33.333333333%" bgcolor="#fffffe">
+										<!--VERTICAL PADDING TABLE-->
+										<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="pad-top-20 pad-sm-bottom-30 align-sm-center" valign="top" align="left" style="padding-top: 20px">
+													<!-- IMAGE-LINK -->
+													<a href="#" style="display: inline-block; line-height: 0; text-decoration: none" target="_blank">
+													<img alt="Image" src="http://placehold.it/160x160/efefef" width="160" border="0" style="display: block !important" />
+													</a>
+												</td>
+											</tr>
+										</table>
+										<!--END VERTICAL PADDING-->
+									</td>
+									<!-- END COL -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END ROW -->
+
+
+				<!-- ROW 2 COLUMNS -->
+				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+					<tr>
+						<td class="" align="center">
+							<table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
+								<tr>
+									<!-- COL -->
+									<td class="col-8-span bg-color-white pad-left-40 pad-right-40 pad-sm-left-20 pad-sm-right-20" valign="top" align="left" style="background: #fffffe; box-sizing: border-box; padding-left: 40px; padding-right: 40px; width: 66.666666666%" bgcolor="#fffffe">
+										<!--VERTICAL PADDING TABLE-->
+										<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="pad-bottom-100 pad-sm-bottom-20" valign="top" align="left" style="padding-bottom: 100px">
+													<!--ROWSPLIT-->
+													<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+														<tr>
+															<td class="lead-3 roboto pad-bottom-8" valign="top" align="left" style="color: #8c8274; font-family: Arial, sans-serif; font-size: 18px; font-style: italic; font-weight: bold">
+																Title Text
+															</td>
+														</tr>
+													</table>
+													<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+														<tr>
+															<td class="roboto basic-1" valign="top" align="left" style="color: #414042; font-family: Arial, sans-serif; font-size: 14px; font-weight: 300; line-height: 150%; mso-line-height-alt: 150%; mso-margin-top-alt: 0">
+																Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+																<!-- BUTTON 2 -->
+																<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td align="left" class="pad-top-15" style="padding-top: 15px">
+																			<table border="0" cellspacing="0" cellpadding="0">
+																				<tr>
+																					<td align="center" class="button-2" style="-moz-border-radius: 15px; -webkit-border-radius: 15px; background: #e0dede; border-radius: 15px" bgcolor="#e0dede">
+																						<!--PADDING TABLE-->
+																						<table border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="pad-left-20 pad-right-20" valign="top" align="center" style="padding-left: 20px; padding-right: 20px">
+																									<a href="#" target="_blank" class="roboto button-text-2" style="-moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; border: 1px solid #e0dede; color: #8c8274; display: inline-block; font-size: 12px; font-style: italic; font-weight: bold; padding: 3px 5px; text-decoration: none">Button &gt;</a>
+																								</td>
+																							</tr>
+																						</table>
+																						<!--END PADDING-->
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!-- END BUTTON -->
+															</td>
+														</tr>
+													</table>
+													<!--END ROWSPLIT-->
+												</td>
+											</tr>
+										</table>
+										<!--END VERTICAL PADDING-->
+									</td>
+									<td class="col-4-span bg-color-white pad-right-40 pad-sm-right-0 keep-img-sm" valign="top" align="left" style="background: #fffffe; box-sizing: border-box; padding-right: 40px; width: 33.333333333%" bgcolor="#fffffe">
+										<!--VERTICAL PADDING TABLE-->
+										<table border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="pad-top-20 pad-sm-bottom-30 align-sm-center" valign="top" align="left" style="padding-top: 20px">
+													<!-- IMAGE-LINK -->
+													<a href="#" style="display: inline-block; line-height: 0; text-decoration: none" target="_blank">
+													<img alt="Image" src="http://placehold.it/160x160/efefef" width="160" border="0" style="display: block !important" />
+													</a>
+												</td>
+											</tr>
+										</table>
+										<!--END VERTICAL PADDING-->
+									</td>
+									<!-- END COL -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END ROW -->
+
+
+				<!-- ROW SOCIAL MEDIA -->
+				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+					<tr>
+						<td class="" align="center">
+							<table class="row pad-bottom-70" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; padding-bottom: 70px; width: 600px">
+								<tr>
+									<!-- COL -->
+									<td class="col-12-span keep-img bg-color-grey pad-top-20 pad-bottom-50" valign="top" align="center" style="box-sizing: border-box; padding-bottom: 50px; padding-top: 20px; width: 100%">
+										<!--ROWSPLIT-->
+										<table class="inner-col pad-bottom-10" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 10px; width: 100%">
+											<tr>
+												<td class="" valign="top" align="center">
+													<!--PADDING TABLE-->
+													<table border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="pad-left-10 pad-right-10" valign="top" align="center" style="padding-left: 10px; padding-right: 10px">
+																<!-- IMAGE-LINK -->
+																<a href="#" style="line-height: 0; text-decoration: none" target="_blank">
+																<img class="inline-block" alt="Facebook" src="http://placehold.it/32x32/7e7e7e/fff&amp;text=F" width="32" border="0" style="display: inline-block !important" />
+																</a>
+															</td>
+															<td class="pad-left-10 pad-right-10" valign="top" align="center" style="padding-left: 10px; padding-right: 10px">
+																<!-- IMAGE-LINK -->
+																<a href="#" style="line-height: 0; text-decoration: none" target="_blank">
+																<img class="inline-block" alt="Facebook" src="http://placehold.it/32x32/7e7e7e/fff&amp;text=T" width="32" border="0" style="display: inline-block !important" />
+																</a>
+															</td>
+															<td class="pad-left-10 pad-right-10" valign="top" align="center" style="padding-left: 10px; padding-right: 10px">
+																<!-- IMAGE-LINK -->
+																<a href="#" style="line-height: 0; text-decoration: none" target="_blank">
+																<img class="inline-block" alt="Facebook" src="http://placehold.it/32x32/7e7e7e/fff&amp;text=G" width="32" border="0" style="display: inline-block !important" />
+																</a>
+															</td>
+														</tr>
+													</table>
+													<!--END PADDING-->
+												</td>
+											</tr>
+										</table>
+										<table class="inner-col" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
+											<tr>
+												<td class="roboto outside" valign="top" align="center" style="color: #000001; font-family: Arial, sans-serif; font-size: 12px; font-weight: 300; letter-spacing: 0.5px">
+													<!-- TEXT-LINK -->
+													<a class="outside roboto" href="#" target="_blank" style="color: #000001; font-family: Arial, sans-serif; font-size: 12px; font-weight: 300; letter-spacing: 0.5px; text-decoration: none">your-company.com</a>  |  © 2014  |  <a class="outside roboto" href="#" target="_blank" style="color: #000001; font-family: Arial, sans-serif; font-size: 12px; font-weight: 300; letter-spacing: 0.5px; text-decoration: none">Unsubscribe</a>
+												</td>
+											</tr>
+										</table>
+										<!--END ROWSPLIT-->
+									</td>
+									<!-- END COL -->
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- END ROW -->
+
+
+			</td>
+		</tr>
+	</table>
+	<!--END WRAPPER-->
+</body>
+</html>

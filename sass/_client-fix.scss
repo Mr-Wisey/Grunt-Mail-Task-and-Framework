@@ -1,0 +1,24 @@
+/* APPLE MAIL */
+/* REMOVE BLUE COLOR ON LINKS, PHONE AND ADDRESS */
+
+@media (max-width: 3000px) {
+   a[x-apple-data-detectors] {
+       color: inherit !important;
+       text-decoration: none !important;
+       font-size: inherit !important;
+    }
+}
+
+
+
+
+
+/* OUTLOOK 2007-2013 */
+/* REMOVE HEIGHT IN TR-TAGS */
+/*
+.inner-col tr {
+   font-size: inherit !important; 
+   mso-line-height-alt: inherit !important; 
+   mso-margin-top-alt: inherit !important;
+}
+*/

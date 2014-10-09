@@ -1,0 +1,12 @@
+@import 'settings.scss';
+
+
+.body {
+   background-color: map-get($colors, brown-bg);
+}
+
+@media (max-width: 355px)   {
+    img[alt="logo"]    {
+        width: 100%;
+    }
+}

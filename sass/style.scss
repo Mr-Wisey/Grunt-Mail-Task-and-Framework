@@ -1,0 +1,311 @@
+@import 'settings.scss';
+
+
+/* ––––––––––––––––– BREAKPOINT-MIXINS ––––––––––––––––– */
+
+@mixin size-m {
+	@media (max-width : $breakpoint-1) {@content;}
+}
+@mixin size-s {
+	@media (max-width : $breakpoint-2) {@content;}
+}
+
+/* ––––––––––––––––– FONT-SETTINGS 2 ––––––––––––––––– */
+
+@each $theme, $properties in $fontthemes {
+  .#{$theme} {
+    @each $prop, $val in $properties {
+
+      @if $prop == font-family  {
+        #{$prop}: $val;
+      }
+      @if $prop == font-color  {
+        color: $val;
+      }
+      @if $prop == font-style  {
+        #{$prop}: $val;
+      }
+      @if $prop == font-weight  {
+        #{$prop}: $val;
+      }
+      @if $prop == font-size  {
+        #{$prop}: $val;
+      }
+      @if $prop == letter-spacing  {
+        #{$prop}: $val;
+      }
+      @if $prop == line-height  {
+        #{$prop}: $val;
+		mso-line-height-alt:$val; 
+		mso-margin-top-alt:0;
+      }
+      @if $prop == font-size-md  {
+        @include size-m {
+          font-size: $val !important;
+        }
+      }
+      @if $prop == line-height-md  {
+        @include size-m {
+          line-height: $val !important;
+        }
+      }
+    }
+  }
+}
+
+/* ad td-selector before class-selector to make it more important on size-s */
+@each $theme, $properties in $fontthemes {
+  td .#{$theme} {
+    @each $prop, $val in $properties {
+      @if $prop == font-size-sm  {
+        @include size-s {
+          font-size: $val !important;
+        }
+      }
+      @if $prop == line-height-sm  {
+        @include size-s {
+          line-height: $val !important;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+/* ––––––––––––––––– DON'T TOUCH BELOW HERE ––––––––––––––––– */
+
+/* ––––––––––––––––– BASICS ––––––––––––––––– */
+
+body {margin: 0;padding: 0; width: 100%;}
+.body {margin: 0;padding: 0; width: 100%;}
+img   {display: block !important;}
+.inline-block   {display: inline-block !important;}
+a	{text-decoration: none;}
+
+[class*='col-']  {
+   box-sizing: border-box;
+}
+
+
+/* ––––––––––––––––– COLORS ––––––––––––––––– */
+
+
+@each $color, $value in $colors {
+    .color-#{$color} {
+        color: $value;
+    }
+    .bg-color-#{$color} {
+        background-color: $value;
+    }
+}
+
+
+
+/* ––––––––––––––––– COLUMN SETTINGS ––––––––––––––––– */
+
+.outer-row {width: 100%;}
+.row-padding {
+	padding-top: $h-space/2;
+	padding-bottom: $h-space/2;
+}
+
+.row {
+	width: $nl-widht;
+/*	margin-left: 10px; */
+/*	margin-right: 10px; */
+   border-collapse: separate;
+   }
+.col-12-span {width: 100%;}
+.col-11-span {width: 91.666666666%;}
+.col-10-span {width: 83.333333333%;}
+.col-9-span {width: 75%;}
+.col-8-span {width: 66.666666666%;}
+.col-7-span {width: 58.333333333%;}
+.col-6-span {width: 50%;}
+.col-5-span {width: 41.666666667%;}
+.col-4-span {width: 33.333333333%;}
+.col-3-span {width: 25%;}       
+.col-2-span {width: 16.666666667%;}
+.col-1-span {width: 8.3333333333%;}
+.inner-col {width: 100%;}       
+
+.col-special-l-span {width: 52.586206897%;}
+.col-special-2-span {width: 47.413793103%;}
+
+.spacer-30  {width: 5.172413794%;}
+
+@include size-s   {
+   [class*='spacer-']  {
+      display: block !important;
+      width: 100% !important;
+      height: $h-space;
+   }
+}
+
+
+
+
+/* ––––––––––––––––– IMAGE-SETTINGS ––––––––––––––––– */
+
+img.auto-width {width: auto !important;}
+
+/* SIZE-M */
+@include size-m {
+   img.m-auto-width {width: auto !important;}
+   }	
+
+/* SIZE-S */
+@include size-s {
+   img.s-auto-width {width: auto !important;}
+   }	
+
+
+/* ––––––––––––––––– BORDER-RADIUS ––––––––––––––––– */
+
+
+.border-radius {
+   -webkit-border-radius: $border-raduis;
+   -moz-border-radius: $border-raduis;
+   border-radius: $border-raduis;
+   }
+
+
+/* ––––––––––––––––– BUTTON ––––––––––––––––– */
+
+
+
+.button	{
+	-webkit-border-radius: $btn-border-radius; 
+	-moz-border-radius: $btn-border-radius; 
+	border-radius: $btn-border-radius; 
+	background-color: $btn-color;
+	a	{
+	-webkit-border-radius: $btn-border-radius; 
+	-moz-border-radius: $btn-border-radius; 
+	border-radius: $btn-border-radius; 
+	border: 1px solid $btn-color; 
+	text-decoration: none; 
+	padding-left: $btn-padding-h; 
+	padding-right: $btn-padding-h; 
+	padding-top: $btn-padding-v; 
+	padding-bottom: $btn-padding-v; 
+	display: inline-block;	
+	}
+}
+
+.button-2	{
+	-webkit-border-radius: $btn2-border-radius; 
+	-moz-border-radius: $btn2-border-radius; 
+	border-radius: $btn2-border-radius; 
+	background-color: $btn2-color;
+	a	{
+	-webkit-border-radius: $btn2-border-radius; 
+	-moz-border-radius: $btn2-border-radius; 
+	border-radius: $btn2-border-radius; 
+	border: 1px solid $btn2-color; 
+	text-decoration: none; 
+	padding-left: $btn2-padding-h; 
+	padding-right: $btn2-padding-h; 
+	padding-top: $btn2-padding-v; 
+	padding-bottom: $btn2-padding-v; 
+	display: inline-block;	
+	}
+}
+
+
+/* ––––––––––––––––– LINKS STYLING ––––––––––––––––– */
+
+.underline  {
+    text-decoration: underline;
+}
+
+
+/* =============================================
+   CHANGE ALIGN
+   ============================================= */
+
+
+@include size-m   {
+   .align-md-left {text-align: left !important;}
+   .align-md-center {text-align: center !important;}
+   .align-md-right {text-align: right !important;}
+
+   .valign-md-top {vertical-align: top !important;}
+   .valign-md-middle {vertical-align: middle !important;}
+   .valign-md-bottom {vertical-align: bottom !important;}
+}
+
+
+@include size-s   {
+   td .align-sm-left {text-align: left !important;}
+   td .align-sm-center {text-align: center !important;}
+   td .align-sm-right {text-align: right !important;}
+
+   td .valign-sm-top {vertical-align: top !important;}
+   td .valign-sm-middle {vertical-align: middle !important;}
+   td .valign-sm-bottom {vertical-align: bottom !important;}
+}
+
+/* =============================================
+   SIZE M
+   ============================================= */
+
+@include size-m   {
+
+.m12c {
+	display: block !important;
+	width: 100% !important;
+	}
+.row {  
+	width: $row-width-m !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+/*	padding-left: 0 !important; */
+/*	padding-right: 0 !important; */
+	}
+
+
+
+[class*='col-']:not(.keep-img) img {     
+    width: 100%;
+    height: auto !important;
+    }  
+
+}
+
+/* =============================================
+   SIZE S
+   ============================================= */
+
+@include size-s   {
+
+table.row {  
+	width: $row-width-s !important;
+   }
+	[class*='col-'] {
+	display: block !important;
+	width: 100% !important;
+	}
+	.hide-s {
+	display: none !important;
+	}
+
+
+    .keep-img-sm img {     
+    width: inherit !important;
+    height: auto !important;
+    }  
+}
+
+
+
+
+/* =============================================
+   OHTER SASS FILES
+   ============================================= */
+
+@import 'client-fix.scss';
+@import 'custom_style.scss';
+@import 'padding.scss';
