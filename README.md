@@ -23,7 +23,7 @@ This is not just a Grunt Task, it is also a powerfull Mail Framework.
 ## How to use
 
 **Grid:**
-12 Columns Grid: 
+12 Columns Grid:
 each row needs to have 12 columns in total, e.g. 2 + 10 or 6 + 6 
 Class for colums: .col-12-span / .col-2-span usw.
 If you need other widths, create your own in style.scss, e.g. .col-special-l-span {width: 52.586206897%;} + .col-special-2-span {width: 47.413793103%;} -> equals 100%
@@ -49,7 +49,6 @@ ass class:
 .bg-color-yourcolor
 
 **Buttons:**
-Use the HTML-Setup in Documentation. 
 You can change the following properties in _settings.scss:
 $btn-color: color(brown-bg);
 $btn-border-radius: 15px;
