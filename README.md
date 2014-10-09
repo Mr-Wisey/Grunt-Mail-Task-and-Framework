@@ -10,7 +10,7 @@ _Just download it and run grunt watch from the command line_
 ## Description
 This is not just a Grunt Task, it is also a powerfull Mail Framework. 
 
-### What Grunt does:
+### What the Grunt-Task does:
 - Compiles your SASS-Files to CSS
 - Removes unused CSS from your stylesheets
 - Inlines your CSS-styles
