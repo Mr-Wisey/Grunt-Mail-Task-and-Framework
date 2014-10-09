@@ -18,7 +18,7 @@ This is not just a Grunt Task, it is also a powerfull Mail Framework.
 ### What the Mail-Framwork is about
 - 12-column SASS-Grid
 - Powerfull SASS-functions
-– Stable and tested HTML-Template
+- Stable and tested HTML-Template
 
 ## How to use
 
