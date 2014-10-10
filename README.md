@@ -69,6 +69,7 @@ img.auto-width -> use this for images which shouldn’t stretch to 100% on grid-
 .hide-s -> hidden on grid-s
 
 **Default Classes:**
+.row -> used to set the width of the Mail-Template<br>
 .row -> used to set the width of the Mail-Template
 
 
