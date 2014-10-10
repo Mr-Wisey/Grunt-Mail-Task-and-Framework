@@ -223,7 +223,7 @@ a {
 /* ––––––––––––––––– COLORS ––––––––––––––––– */
 
 .bg-color-white {
-  background-color: #fffffe;
+  background-color: #FFFFFE;
 }
 
 /* ––––––––––––––––– COLUMN SETTINGS ––––––––––––––––– */
@@ -254,10 +254,6 @@ a {
 
 .col-4-span {
   width: 33.333333333%;
-}
-
-.inner-col {
-  width: 100%;
 }
 
 /* ––––––––––––––––– IMAGE-SETTINGS ––––––––––––––––– */
@@ -578,3 +574,5 @@ a {
     padding-bottom: 30px !important;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
