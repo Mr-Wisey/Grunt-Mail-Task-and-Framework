@@ -123,10 +123,10 @@ a {
   background-color: #000001; }
 
 .color-white {
-  color: #fffffe; }
+  color: #FFFFFE; }
 
 .bg-color-white {
-  background-color: #fffffe; }
+  background-color: #FFFFFE; }
 
 .color-font-black {
   color: #414042; }
@@ -195,9 +195,6 @@ a {
 
 .col-1-span {
   width: 8.3333333333%; }
-
-.inner-col {
-  width: 100%; }
 
 .col-special-l-span {
   width: 52.586206897%; }
@@ -872,3 +869,5 @@ img.auto-width {
 
   td .pad-sm-bottom-100 {
     padding-bottom: 100px !important; } }
+
+/*# sourceMappingURL=style.css.map */
