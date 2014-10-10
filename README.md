@@ -73,7 +73,7 @@ img.auto-width -> use this for images which shouldn’t stretch to 100% on grid-
 .row-padding -> optional -> puts some space between your rows<br>
 .row -> used to set the width of the Mail-Template<br>
 .col-... -> see Grid<br>
-.inner-col -> 
+
 
 ## License
 MIT
