@@ -229,6 +229,9 @@ img.auto-width {
   border-radius: 20px; }
 
 /* ––––––––––––––––– BUTTON ––––––––––––––––– */
+@media (max-width: 520px) {
+  .button-wrapper {
+    display: inline-block; } }
 .button {
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
