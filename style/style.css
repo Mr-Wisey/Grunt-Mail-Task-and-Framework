@@ -12,7 +12,7 @@
 @media screen and (max-width: 3000px) {
   /* hides this rule from unsupported clients */
   .roboto {
-    font-family: "Roboto", arial, sans-serif !important; } }
+    font-family: 'Roboto', arial, sans-serif !important; } }
 /* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
 /* 	YOUT CAN USE 
 	Attributes: font-size, font-size-md, font-size-sm, font-color, 
@@ -376,7 +376,7 @@ img.auto-width {
 @media screen and (max-width: 3000px) {
   /* hides this rule from unsupported clients */
   .roboto {
-    font-family: "Roboto", arial, sans-serif !important; } }
+    font-family: 'Roboto', arial, sans-serif !important; } }
 /* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
 /* 	YOUT CAN USE 
 	Attributes: font-size, font-size-md, font-size-sm, font-color, 
@@ -405,7 +405,7 @@ img.auto-width {
 @media screen and (max-width: 3000px) {
   /* hides this rule from unsupported clients */
   .roboto {
-    font-family: "Roboto", arial, sans-serif !important; } }
+    font-family: 'Roboto', arial, sans-serif !important; } }
 /* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
 /* 	YOUT CAN USE 
 	Attributes: font-size, font-size-md, font-size-sm, font-color, 

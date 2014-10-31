@@ -45,7 +45,7 @@ $colors: (
 /* FONTS -> SET THE FONTS VARIABLES WITH FALLBACK */
 $arial: Arial, sans-serif;
 $helvetica: Helvetica, sans-serif;
-$verdana: "Verdana, sans-serif";
+$verdana: 'Verdana', sans-serif;
 $times: 'Times New Roman', Times, serif;
 
 
@@ -53,7 +53,7 @@ $times: 'Times New Roman', Times, serif;
 @media (max-width: 3000px) {
     @media screen { /* hides this rule from unsupported clients */ 
         .roboto {
-           font-family: "Roboto", arial, sans-serif !important;
+           font-family: 'Roboto', arial, sans-serif !important;
         }
     }
 }
