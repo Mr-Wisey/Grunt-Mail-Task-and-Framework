@@ -206,6 +206,11 @@ body {
 
 img {
   display: block !important;
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
 }
 
 .inline-block {
@@ -223,7 +228,7 @@ a {
 /* ––––––––––––––––– COLORS ––––––––––––––––– */
 
 .bg-color-white {
-  background-color: #FFFFFE;
+  background-color: #fffffe;
 }
 
 /* ––––––––––––––––– COLUMN SETTINGS ––––––––––––––––– */
@@ -252,8 +257,16 @@ a {
   width: 66.666666666%;
 }
 
+.col-6-span {
+  width: 50%;
+}
+
 .col-4-span {
   width: 33.333333333%;
+}
+
+.col-3-span {
+  width: 25%;
 }
 
 /* ––––––––––––––––– IMAGE-SETTINGS ––––––––––––––––– */
@@ -327,6 +340,18 @@ a {
    ============================================= */
 
 @media (max-width: 620px) {
+  .m6c {
+    display: block !important;
+    float: left;
+    width: 50% !important;
+  }
+
+  .m3c {
+    display: block !important;
+    float: left;
+    width: 25% !important;
+  }
+
   .row {
     width: 92% !important;
     margin-left: 0 !important;
@@ -353,6 +378,16 @@ a {
   [class*='col-'] {
     display: block !important;
     width: 100% !important;
+  }
+
+  .s12c {
+    float: left;
+    width: 100% !important;
+  }
+
+  .s6c {
+    float: left;
+    width: 50% !important;
   }
 
   .keep-img-sm img {
@@ -574,5 +609,3 @@ a {
     padding-bottom: 30px !important;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

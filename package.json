@@ -6,6 +6,7 @@
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-watch": "~0.4.4",
     "grunt-premailer": "^0.2.10",
-    "grunt-uncss": "^0.3.6"
+    "grunt-uncss": "^0.3.6",
+    "grunt-processhtml": "^0.3.3"
   }
 }

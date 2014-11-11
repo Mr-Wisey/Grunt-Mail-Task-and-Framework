@@ -35,17 +35,6 @@ module.exports = function(grunt) {
 			}
 		  }
 		},
-		litmus: {
-            test: {
-              src: ['inline/index-inline.html'],
-              options: {
-                username: 'cortese@arcmedia.ch',
-                password: '*Blitz123',
-                url: 'https://arcmedia.litmus.com',
-                clients: ['gmailnew', 'ffgmailnew', 'chromegmailnew']
-                }
-            }
-		},
 		watch: {
 			css: {
 				files: '**/*.scss',
@@ -58,12 +47,10 @@ module.exports = function(grunt) {
 		}
 	});
 	grunt.registerTask('email', ['sass','uncss', 'processhtml', 'premailer']);
-	grunt.registerTask('litmus', ['litmus']);
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-uncss');
 	grunt.loadNpmTasks('grunt-processhtml');
 	grunt.loadNpmTasks('grunt-premailer');	
-	grunt.loadNpmTasks('grunt-litmus');
 	grunt.registerTask('default',['watch']);
 }
