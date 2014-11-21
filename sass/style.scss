@@ -226,6 +226,30 @@ img.auto-width {width: auto !important;}
 }
 
 
+/* ––––––––––––––––– LINE-STYLE ––––––––––––––––– */
+
+
+hr  {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 0px !important;
+    font-size: 0px !important;
+}
+
+
+
+.zero-height    {
+    line-height: 0px !important;
+    font-size: 0px !important;
+}
+
+/* ––––––––––––––––– FONT-WEIGHT ––––––––––––––––– */
+
+strong, b, .strong  {
+    font-weight: bold;
+}
+
+
 /* =============================================
    CHANGE ALIGN
    ============================================= */

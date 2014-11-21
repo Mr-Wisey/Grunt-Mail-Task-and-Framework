@@ -128,10 +128,10 @@ a {
   background-color: #000001; }
 
 .color-white {
-  color: #fffffe; }
+  color: #FFFFFE; }
 
 .bg-color-white {
-  background-color: #fffffe; }
+  background-color: #FFFFFE; }
 
 .color-font-black {
   color: #414042; }
@@ -274,6 +274,21 @@ img.auto-width {
 /* ––––––––––––––––– LINKS STYLING ––––––––––––––––– */
 .underline {
   text-decoration: underline; }
+
+/* ––––––––––––––––– LINE-STYLE ––––––––––––––––– */
+hr {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  line-height: 0px !important;
+  font-size: 0px !important; }
+
+.zero-height {
+  line-height: 0px !important;
+  font-size: 0px !important; }
+
+/* ––––––––––––––––– FONT-WEIGHT ––––––––––––––––– */
+strong, b, .strong {
+  font-weight: bold; }
 
 /* =============================================
    CHANGE ALIGN
@@ -981,3 +996,5 @@ img.auto-width {
 
   td .pad-sm-bottom-100 {
     padding-bottom: 100px !important; } }
+
+/*# sourceMappingURL=style.css.map */
