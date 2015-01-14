@@ -277,6 +277,24 @@ strong, b, .strong  {
 }
 
 /* =============================================
+   CHANGE WIDTH
+   ============================================= */
+
+
+@include size-m   {
+    .width-md-auto {
+        width: auto !important;
+    }
+}
+
+@include size-s   {
+    table td .width-sm-auto {
+        width: auto !important;
+    }
+}
+
+
+/* =============================================
    SIZE M
    ============================================= */
 
