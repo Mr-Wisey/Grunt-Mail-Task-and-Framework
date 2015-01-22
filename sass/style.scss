@@ -174,49 +174,41 @@ img.auto-width {width: auto !important;}
 /* ––––––––––––––––– BUTTON ––––––––––––––––– */
 
 
-@include size-s {
-    .button-wrapper {
-        display: inline-block;
-    }
-}	
-
-.button	{
+.button-1	{
 	-webkit-border-radius: $btn-border-radius; 
 	-moz-border-radius: $btn-border-radius; 
 	border-radius: $btn-border-radius; 
-	background-color: $btn-color;
-	a	{
-	-webkit-border-radius: $btn-border-radius; 
-	-moz-border-radius: $btn-border-radius; 
-	border-radius: $btn-border-radius; 
-	border: 1px solid $btn-color; 
-	text-decoration: none; 
-	padding-left: $btn-padding-h; 
-	padding-right: $btn-padding-h; 
-	padding-top: $btn-padding-v; 
-	padding-bottom: $btn-padding-v; 
-	display: inline-block;	
-	}
 }
 
 .button-2	{
 	-webkit-border-radius: $btn2-border-radius; 
 	-moz-border-radius: $btn2-border-radius; 
 	border-radius: $btn2-border-radius; 
-	background-color: $btn2-color;
-	a	{
-	-webkit-border-radius: $btn2-border-radius; 
-	-moz-border-radius: $btn2-border-radius; 
-	border-radius: $btn2-border-radius; 
-	border: 1px solid $btn2-color; 
-	text-decoration: none; 
-	padding-left: $btn2-padding-h; 
-	padding-right: $btn2-padding-h; 
-	padding-top: $btn2-padding-v; 
-	padding-bottom: $btn2-padding-v; 
-	display: inline-block;	
-	}
 }
+
+@include size-m {
+    .button-1	{
+        width: $btn-width-md; 
+    }
+
+    .button-2	{
+        width: $btn2-width-md; 
+    }
+}	
+
+
+@include size-s {
+    .button-wrapper {
+        display: inline-block;
+    }
+    .button-1	{
+        width: $btn-width-sm; 
+    }
+
+    .button-2	{
+        width: $btn2-width-sm; 
+    }
+}	
 
 
 /* ––––––––––––––––– LINKS STYLING ––––––––––––––––– */

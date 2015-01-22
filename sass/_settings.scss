@@ -125,20 +125,18 @@ $fontthemes: (
 
 
 
-
 /* ––––––––––––––––– BUTTON-SETTINGS ––––––––––––––––– */
 
 
 
-/* .button */
-$btn-color: color(brown-bg);
-$btn-border-radius: 15px;
-$btn-padding-h: 10px;
-$btn-padding-v: 5px;
+/* .button-1 */
+$btn-width-md: 160px;
+$btn-width-sm: 80px;
+$btn-border-radius: 0px;
 
 /* .button-2 */
-$btn2-color: color(brown-bg);
-$btn2-border-radius: 15px;
-$btn2-padding-h: 5px;
-$btn2-padding-v: 3px;
+$btn2-width-md: 160px;
+$btn2-width-sm: 80px;
+$btn2-border-radius: 0px;
+
 

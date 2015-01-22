@@ -126,54 +126,45 @@
 
 
 
-<!-- BUTTON -->
-<table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
-    <tr>
-        <td align="left">
-            <table class="button-wrapper" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                    <td class="button" align="center">
-                        <!--PADDING TABLE-->
-                        <table border="0" cellpadding="0" cellspacing="0">
-                            <tr>
-                                <td class="pad-left-10 pad-right-10" valign="top" align="center">
-                                    <a href="xxxx" target="_blank" class="xxxx">xxxx</a>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--END PADDING-->
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<!-- BUTTON http://www.industrydive.com/blog/how-to-make-html-email-buttons-that-rock/ (FONT-CLASS ON A-ELEMENT WITHOUT COLOR AND LINE-HEIGHT / NO FONT-SETTINGS IN OUTER TD -> BAD FOR OWA)-->
+<table border="0" cellspacing="0" cellpadding="0" height="40" class="button-wrapper"> 
+    <tr> 
+        <td align="center" width="270" height="40" bgcolor="#ba1c36" class="button-link button-1" style="color: #ffffff; display: block;">
+            <a href="https://shop.selecta.ch/euro-bonus.html" class="button-link" style="text-decoration: none; line-height:40px; width:100%; display:inline-block" target="_blank">
+                <span style="color: #FFFFFF">JETZT PROFITIEREN</span>
+            </a>
+        </td> 
+    </tr> 
+</table> 
 <!-- END BUTTON -->
 
 
-<!-- BUTTON 100% WIDTH -->
-<table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
-    <tr>
-        <td align="left" class="pad-top-20 pad-bottom-80">
-            <table class="button-wrapper" border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
-                <tr>
-                    <td class="button" align="center">
-                        <!--PADDING TABLE-->
-                        <table border="0" cellpadding="0" cellspacing="0">
-                            <tr>
-                                <td class="pad-left-10 pad-right-10 button-link" valign="top" align="center">
-                                    <a href="xxxx" target="_blank" class="button-link">ZUM SHOP</a>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--END PADDING-->
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<!-- BUTTON ROUND CORNERS SUPPORT FOR OUTLOOK (NOT FINISHED) -->
+<div>
+    <!--[if mso]>
+        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.EXAMPLE.com/" style="height:40px;v-text-anchor:middle;width:300px;" arcsize="10%" stroke="f" fillcolor="#d62828">
+            <w:anchorlock/>
+            <center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;">
+            Button Text Here!
+            </center>
+        </v:roundrect>
+    <![endif]-->
+    <![if !mso]>
+    <table cellspacing="0" cellpadding="0">
+        <tr> 
+            <td align="center" width="300" height="40" bgcolor="#d62828" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #ffffff; display: block;">
+                <a href="http://www.EXAMPLE.com/" style="font-size:16px; font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%; display:inline-block">
+                    <span style="color: #ffffff;">
+                    Button Text Here!
+                    </span>
+                </a>
+            </td> 
+        </tr> 
+    </table> 
+    <![endif]>
+</div>
 <!-- END BUTTON -->
+
 
 
 
@@ -218,16 +209,26 @@
 
 
 
-<!-- HORIZONTAL LINE -->
-<tr>
-    <td class="col-12-span bg-color-white pad-left-20 pad-right-20 pad-bottom-20 zero-height" colspan="2" valign="top" align="left">
-        <hr class="bg-color-black color-black zero-height" height="6" style="height: 6px; border: 0;"  />
-    </td>
-</tr>
+<!-- HORIZONTAL LINE (WORKING EVERYWHERE, HAS VERTICAL PADDING) -->
+<table class="outer-row" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td class="" align="center">
+            <table class="row" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <!-- COL -->
+                    <td class="col-12-span bg-color-white pad-bottom-20" valign="top" align="left">
+                        <hr class="zero-height bg-color-grey color-grey" height="1" style="height: 1px; border: 0;"  />
+                    </td>
+                    <!-- END COL -->
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 <!-- END HORIZONTAL LINE -->
 
 
-<!-- ROW HORIZONTAL LINE 2 -->
+<!-- ROW HORIZONTAL LINE (NO SPACE TO OTHER ELEMENTS, NOT WORKING PROPERLY IN OWA) -->
 <table class="outer-row" border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td class="" align="center">
@@ -247,7 +248,7 @@
         </td>
     </tr>
 </table>
-<!-- END ROW -->
+<!-- END HORIZONTAL LINE 2 -->
 
 
 
