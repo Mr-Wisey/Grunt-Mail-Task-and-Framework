@@ -292,6 +292,10 @@ strong, b, .strong  {
 
 @include size-m   {
 
+.hide-md {
+    display: none !important;
+}
+
 .m12c {
 	display: block !important;
 	float: left;
@@ -389,7 +393,7 @@ table.row {
 		display: block !important;
 		width: 100% !important;
 	}
-	.hide-s {
+	.hide-sm {
 		display: none !important;
 	}
 
