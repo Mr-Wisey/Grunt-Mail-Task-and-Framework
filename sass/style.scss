@@ -241,6 +241,11 @@ strong, b, .strong  {
     font-weight: bold;
 }
 
+/* ––––––––––––––––– VISIBLE CLASS ––––––––––––––––– */
+
+.visible-sm {
+    display: none;
+}
 
 /* =============================================
    CHANGE ALIGN
@@ -395,6 +400,9 @@ table.row {
 	}
 	.hide-sm {
 		display: none !important;
+	}
+	.visible-sm {
+	    display: block !important;
 	}
 
 	.s12c {
