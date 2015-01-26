@@ -80,7 +80,15 @@
 
 body 	{margin: 0;padding: 0; width: 100%;}
 .body 	{margin: 0;padding: 0; width: 100%;}
-img		{display: block !important; border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+img	{
+	display: block !important; 
+	border:0; 
+	height:auto; 
+	line-height:100%; 
+	outline:none; 
+	text-decoration:none;
+	-ms-interpolation-mode: bicubic;
+	}
 .inline-block   {display: inline-block !important;}
 a	{text-decoration: none;}
 
