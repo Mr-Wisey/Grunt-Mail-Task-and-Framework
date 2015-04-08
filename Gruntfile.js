@@ -3,8 +3,11 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		sass: {
 			dist: {
+				options: {                       // Target options
+					style: 'expanded'
+				},
 				files: {
-					'style/style.css' : 'sass/style.scss'
+					'style/style.css' : 'sass/main.scss'
 				}
 			}
 		},
@@ -36,17 +39,23 @@ module.exports = function(grunt) {
 		  }
 		},
 		watch: {
-			css: {
-				files: '**/*.scss',
-				tasks: ['email']
+			sass: {
+				files: [
+				'sass/*.scss',
+				'sass/*/*.scss'
+				],
+				tasks: ['build2']
 			},
 			html: {
-				files: 'index.html',
-				tasks: ['email']
+				files: [
+				'index.html'
+				],
+				tasks: ['build']
 			}
 		}
 	});
-	grunt.registerTask('email', ['sass','uncss', 'processhtml', 'premailer']);
+	grunt.registerTask('build', ['sass','uncss', 'processhtml', 'premailer']);
+	grunt.registerTask('build2', ['sass']);
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-uncss');

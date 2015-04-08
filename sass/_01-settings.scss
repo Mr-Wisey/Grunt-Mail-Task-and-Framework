@@ -6,7 +6,6 @@ $nl-widht: 600px;
 $breakpoint-1: 620px;
 $breakpoint-2: 520px;
 
-
 /* BORDER-RADIUS */
 $border-raduis: 20px;
 
@@ -18,7 +17,6 @@ $row-width-m: 92%;
 $row-width-s: 100%;
 
 
-
 /* ––––––––––––––––– COLOR-SETTINGS ––––––––––––––––– */
 
 
@@ -26,7 +24,10 @@ $row-width-s: 100%;
 $colors: (
 	black:      #000001,
 	white:      #FFFFFE,
-	font-black: #414042,
+	grey:       #e6e6e6,
+	dark-grey:  #7a7a7a,
+	light-grey: #ececec,
+	red:        #ba1c36,
     brown:      #8c8274,
 	brown-bg:   #e0dede,
 );
@@ -49,16 +50,15 @@ $verdana: 'Verdana', sans-serif;
 $times: 'Times New Roman', Times, serif;
 
 
-/* ––––––––––––––––– WEBFONTS ––––––––––––––––– */
+/* ––––––––––––––––– WEBFONTS ––––––––––––––––– 
 @media (max-width: 3000px) {
-    @media screen { /* hides this rule from unsupported clients */ 
+    @media screen {  // in a media-querie for not affecting unsopported clients
         .roboto {
            font-family: 'Roboto', arial, sans-serif !important;
         }
     }
 }
-
-
+*/
 
 /* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
 /* 	YOUT CAN USE 
@@ -67,76 +67,100 @@ $times: 'Times New Roman', Times, serif;
 	values: font-variable, px, %, em, color(xxxx)
 */
 $fontthemes: (
-	lead-1: (
+	titel: (
 		font-family: $arial,
-		font-size: 30px, 
-		font-weight: 300, 
-		font-size-md: 24px, 
-		font-size-sm: 20px,
-		line-height: 150%, 
-		line-height-md: 120%, 
+		font-size: 28px, 
+		font-weight: 700, 
+		font-size-md: 23px, 
+		font-size-sm: 22px,
+		line-height: 100%, 
+		line-height-md: 100%, 
 		line-height-sm: 100%, 
-		font-color: color(brown)
+		font-color: color(black)
     ),
-	lead-2: (
+	titel-lead: (
 		font-family: $arial,
-		font-size: 18px, 
+		font-size: 23px, 
+		font-weight: 700, 
+		font-size-md: 20px, 
+		font-size-sm: 22px,
+		line-height: 100%, 
+		line-height-md: 100%, 
+		line-height-sm: 100%, 
+		font-color: color(black)
+    ),
+	titel-2: (
+		font-family: $arial,
+		font-size: 26px, 
+		font-weight: 500, 
+		font-size-md: 22px, 
+		font-size-sm: 18px,
+		line-height: 115%, 
+		line-height-md: 115%, 
+		line-height-sm: 115%, 
+		font-color: color(red)
+    ),
+	button-link: (
+		font-family: $arial,
+		font-size: 15px, 
 		font-weight: 300, 
-		line-height: 150%, 
-		font-color: color(font-black)
+		font-size-md: 15px, 
+		font-size-sm: 15px,
+		letter-spacing: 1px, 
     ),
-	lead-3: (
-		font-family: $arial, 
-		font-size: 18px, 
-		font-style: italic, 
-		font-weight: bold, 
-		font-color: color(brown)
-    ),
-	outside: (
-		font-family: $arial, 
+	button-link-fr: (
+		font-family: $arial,
 		font-size: 12px, 
-		letter-spacing: 0.5px, 
 		font-weight: 300, 
+		font-size-md: 12px, 
+		font-size-sm: 12px,
+		letter-spacing: 1px, 
+    ),
+	wunschzettel: (
+		font-family: $arial,
+		font-size: 13px, 
+		font-weight: 500, 
+		font-size-md: 13px, 
+		font-size-sm: 13px,
+		line-height: 40px, 
+		line-height-md: 40px, 
+		line-height-sm: 40px, 
 		font-color: color(black)
     ),
 	basic-1: (
 		font-family: $arial, 
+		font-size: 17px,
+		font-weight: 500,
+		line-height: 150%,
+		font-color: color(black)
+    ),
+	basic-2: (
+		font-family: $arial, 
 		font-size: 14px, 
-		font-weight: 300,
+		font-weight: normal,
 		line-height: 150%, 
-		font-color: color(font-black)
+		font-color: color(dark-grey)
     ),
-	button-text-1:	(
-		font-familiy: arial,
-		font-weight: bold,
-		font-style: italic,
-		font-color: color(brown),
-		font-size: 14px
-    ),
-    button-text-2:	(
-		font-familiy: arial,
-		font-weight: bold,
-		font-style: italic,
-		font-color: color(brown),
-		font-size: 12px
+	outside: (
+		font-family: $arial, 
+		font-size: 12px, 
+		font-weight: normal, 
+		font-color: color(dark-grey)
     ),
 );
 
 
 
-
 /* ––––––––––––––––– BUTTON-SETTINGS ––––––––––––––––– */
 
-
-
 /* .button-1 */
-$btn-width-md: 160px;
-$btn-width-sm: 80px;
+$btn-width-md: 210px;
+$btn-width-sm: 220px;
 $btn-border-radius: 0px;
 
 /* .button-2 */
-$btn2-width-md: 160px;
-$btn2-width-sm: 80px;
+$btn2-width-md: 210px;
+$btn2-width-sm: 210px;
 $btn2-border-radius: 0px;
 
 

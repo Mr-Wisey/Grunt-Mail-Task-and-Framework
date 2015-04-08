@@ -1,8 +1,5 @@
-@import 'settings.scss';
-
-
 .body {
-   background-color: map-get($colors, brown-bg);
+   background-color: map-get($colors, white);
 }
 
 @media (max-width: 355px)   {
@@ -10,3 +7,5 @@
         width: 100%;
     }
 }
+
+
