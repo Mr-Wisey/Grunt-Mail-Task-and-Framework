@@ -1,5 +1,5 @@
 .body {
-   background-color: map-get($colors, white);
+   background-color: map-get($colors, grey-bg);
 }
 
 @media (max-width: 355px)   {
@@ -7,5 +7,3 @@
         width: 100%;
     }
 }
-
-

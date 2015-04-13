@@ -1,194 +1,92 @@
 @font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Exo 2'), local('Exo2-Regular'), url(http://fonts.gstatic.com/s/exo2/v3/N9KSa305HxlY5zk6XisHxw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: italic;
+  font-weight: 500;
+  src: local('Exo 2 Medium Italic'), local('Exo2-MediumItalic'), url(http://fonts.gstatic.com/s/exo2/v3/1_2um3wNMzErQK93dC9Hei3USBnSvpkopQaUR-2r7iU.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v14/Hgo13k-tfSpn0qi1SFdUfaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  src: local('Roboto Light'), local('Roboto-Light'), url(http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto Regular'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v14/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype');
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/zN7GBFwfMP4uA6AR0HCoLQ.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v14/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(http://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v14/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 300;
-  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v14/7m8l7TlFO-S3VkhHuR0at50EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(http://fonts.gstatic.com/s/roboto/v15/7m8l7TlFO-S3VkhHuR0at50EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 400;
-  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v14/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(http://fonts.gstatic.com/s/roboto/v15/W4wDsBUluyw0tK3tykhXEfesZW2xOQ-xsNqO47m55DA.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 500;
-  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v14/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+  src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url(http://fonts.gstatic.com/s/roboto/v15/OLffGBTaF0XFOW1gnuHF0Z0EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: italic;
   font-weight: 700;
-  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v14/t6Nd4cfPRhZP44Q5QAjcC50EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC50EAVxt0G0biEntp43Qt6E.ttf) format('truetype');
 }
 
 @charset "UTF-8";
 
 /* ––––––––––––––––– SETTING ––––––––––––––––– */
 
-/* MAIL WIDHT AND MEDIAQUERIES */
-
-/* BORDER-RADIUS */
-
-/* DEFAULT MARGIN BOTTOM ON COLLAPSE */
-
-/* ROW WIDTH ON SIZE-S/M */
-
 /* ––––––––––––––––– COLOR-SETTINGS ––––––––––––––––– */
-
-/* ADD YOUR COLORS HERE */
 
 /* ––––––––––––––––– FONT-SETTINGS ––––––––––––––––– */
 
-/* FONTS -> SET THE FONTS VARIABLES WITH FALLBACK */
-
 /* ––––––––––––––––– WEBFONTS ––––––––––––––––– */
 
-@media screen and (max-width: 3000px) {
-  /* hides this rule from unsupported clients */
-
-  .roboto {
-    font-family: 'Roboto', arial, sans-serif !important;
-  }
-}
-
-/* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
-
-/* 	YOUT CAN USE 
-	Attributes: font-size, font-size-md, font-size-sm, font-color, 
-		font-weight, line-height, line-height-md, line-height-sm and letter-spacing
-	values: font-variable, px, %, em, color(xxxx)
-*/
+/* ––––––––––––––––– FONT THEMES ––––––––––––––––– */
 
 /* ––––––––––––––––– BUTTON-SETTINGS ––––––––––––––––– */
 
-/* .button */
-
-/* .button-2 */
-
 /* ––––––––––––––––– BREAKPOINT-MIXINS ––––––––––––––––– */
 
-/* ––––––––––––––––– FONT-SETTINGS 2 ––––––––––––––––– */
-
-.lead-1 {
-  font-family: Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 150%;
-  mso-line-height-alt: 150%;
-  mso-margin-top-alt: 0;
-  color: #8c8274;
-}
-
-@media (max-width: 620px) {
-  .lead-1 {
-    font-size: 24px !important;
-  }
-}
-
-@media (max-width: 620px) {
-  .lead-1 {
-    line-height: 120% !important;
-  }
-}
-
-.lead-2 {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 150%;
-  mso-line-height-alt: 150%;
-  mso-margin-top-alt: 0;
-  color: #414042;
-}
-
-.lead-3 {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: bold;
-  color: #8c8274;
-}
-
-.outside {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  font-weight: 300;
-  color: #000001;
-}
-
-.basic-1 {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 150%;
-  mso-line-height-alt: 150%;
-  mso-margin-top-alt: 0;
-  color: #414042;
-}
-
-.button-text-1 {
-  font-weight: bold;
-  font-style: italic;
-  color: #8c8274;
-  font-size: 14px;
-}
-
-.button-text-2 {
-  font-weight: bold;
-  font-style: italic;
-  color: #8c8274;
-  font-size: 12px;
-}
+/* ––––––––––––––––– GENERATE FONT CLASSES ––––––––––––––––– */
 
 /* ad td-selector before class-selector to make it more important on size-s */
-
-@media (max-width: 520px) {
-  td .lead-1 {
-    font-size: 20px !important;
-  }
-}
-
-@media (max-width: 520px) {
-  td .lead-1 {
-    line-height: 100% !important;
-  }
-}
-
-/* ––––––––––––––––– DON'T TOUCH BELOW HERE ––––––––––––––––– */
 
 /* ––––––––––––––––– BASICS ––––––––––––––––– */
 
@@ -211,10 +109,7 @@ img {
   line-height: 100%;
   outline: none;
   text-decoration: none;
-}
-
-.inline-block {
-  display: inline-block !important;
+  -ms-interpolation-mode: bicubic;
 }
 
 a {
@@ -225,11 +120,7 @@ a {
   box-sizing: border-box;
 }
 
-/* ––––––––––––––––– COLORS ––––––––––––––––– */
-
-.bg-color-white {
-  background-color: #FFFFFE;
-}
+/* ––––––––––––––––– GENERATE COLOR-CLASSES ––––––––––––––––– */
 
 /* ––––––––––––––––– COLUMN SETTINGS ––––––––––––––––– */
 
@@ -238,19 +129,23 @@ a {
 }
 
 .row-padding {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .row {
   width: 600px;
-  /*	margin-left: 10px; */
-  /*	margin-right: 10px; */
+  /*  margin-left: 10px; */
+  /*  margin-right: 10px; */
   border-collapse: separate;
 }
 
 .col-12-span {
   width: 100%;
+}
+
+.col-9-span {
+  width: 75%;
 }
 
 .col-8-span {
@@ -271,59 +166,29 @@ a {
 
 /* ––––––––––––––––– IMAGE-SETTINGS ––––––––––––––––– */
 
-/* SIZE-M */
+td img {
+  width: 100%;
+  height: auto !important;
+}
 
-/* SIZE-S */
+@media (max-width: 620px) {
+  td img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  td.img-full-width a {
+    width: 100% !important;
+  }
+
+  td.img-max-width img {
+    max-width: 100% !important;
+  }
+}
 
 /* ––––––––––––––––– BORDER-RADIUS ––––––––––––––––– */
 
 /* ––––––––––––––––– BUTTON ––––––––––––––––– */
-
-@media (max-width: 520px) {
-  .button-wrapper {
-    display: inline-block;
-  }
-}
-
-.button {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background-color: #e0dede;
-}
-
-.button a {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  border: 1px solid #e0dede;
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: inline-block;
-}
-
-.button-2 {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background-color: #e0dede;
-}
-
-.button-2 a {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  border: 1px solid #e0dede;
-  text-decoration: none;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  display: inline-block;
-}
 
 /* ––––––––––––––––– LINKS STYLING ––––––––––––––––– */
 
@@ -331,48 +196,27 @@ a {
 
 /* ––––––––––––––––– FONT-WEIGHT ––––––––––––––––– */
 
+/* ––––––––––––––––– VISIBLE CLASS ––––––––––––––––– */
+
 /* =============================================
    CHANGE ALIGN
    ============================================= */
 
-@media (max-width: 520px) {
-  td .align-sm-left {
-    text-align: left !important;
-  }
-
-  td .align-sm-center {
-    text-align: center !important;
-  }
-}
+/* =============================================
+   CHANGE WIDTH
+   ============================================= */
 
 /* =============================================
    SIZE M
    ============================================= */
 
 @media (max-width: 620px) {
-  .m6c {
-    display: block !important;
-    float: left;
-    width: 50% !important;
-  }
-
-  .m3c {
-    display: block !important;
-    float: left;
-    width: 25% !important;
-  }
-
   .row {
     width: 92% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    /*	padding-left: 0 !important; */
-    /*	padding-right: 0 !important; */
-  }
-
-  [class*='col-']:not(.keep-img) img {
-    width: 100%;
-    height: auto !important;
+    /*  padding-left: 0 !important; */
+    /*  padding-right: 0 !important; */
   }
 }
 
@@ -382,33 +226,20 @@ a {
 
 @media (max-width: 520px) {
   table.row {
-    width: 100% !important;
+    width: 92% !important;
   }
 
   [class*='col-'] {
     display: block !important;
     width: 100% !important;
   }
-
-  .s12c {
-    float: left;
-    width: 100% !important;
-  }
-
-  .s6c {
-    float: left;
-    width: 50% !important;
-  }
-
-  .keep-img-sm img {
-    width: inherit !important;
-    height: auto !important;
-  }
 }
 
-/* =============================================
-   OHTER SASS FILES
-   ============================================= */
+/* ––––––––––––––––– PADDINGS ––––––––––––––––– */
+
+.pad-right-20 {
+  padding-right: 20px;
+}
 
 /* APPLE MAIL */
 
@@ -422,6 +253,15 @@ a {
   }
 }
 
+/* APPLE */
+
+/* REMOVE FONT SIZE ADJUSTEMENT */
+
+a,
+td {
+  -webkit-text-size-adjust: none;
+}
+
 /* OUTLOOK 2007-2013 */
 
 /* REMOVE HEIGHT IN TR-TAGS */
@@ -433,191 +273,5 @@ a {
    mso-margin-top-alt: inherit !important;
 }
 */
-
-/* ––––––––––––––––– SETTING ––––––––––––––––– */
-
-/* MAIL WIDHT AND MEDIAQUERIES */
-
-/* BORDER-RADIUS */
-
-/* DEFAULT MARGIN BOTTOM ON COLLAPSE */
-
-/* ROW WIDTH ON SIZE-S/M */
-
-/* ––––––––––––––––– COLOR-SETTINGS ––––––––––––––––– */
-
-/* ADD YOUR COLORS HERE */
-
-/* ––––––––––––––––– FONT-SETTINGS ––––––––––––––––– */
-
-/* FONTS -> SET THE FONTS VARIABLES WITH FALLBACK */
-
-/* ––––––––––––––––– WEBFONTS ––––––––––––––––– */
-
-@media screen and (max-width: 3000px) {
-  /* hides this rule from unsupported clients */
-
-  .roboto {
-    font-family: 'Roboto', arial, sans-serif !important;
-  }
-}
-
-/* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
-
-/* 	YOUT CAN USE 
-	Attributes: font-size, font-size-md, font-size-sm, font-color, 
-		font-weight, line-height, line-height-md, line-height-sm and letter-spacing
-	values: font-variable, px, %, em, color(xxxx)
-*/
-
-/* ––––––––––––––––– BUTTON-SETTINGS ––––––––––––––––– */
-
-/* .button */
-
-/* .button-2 */
-
-.body {
-  background-color: #e0dede;
-}
-
-@media (max-width: 355px) {
-  img[alt="logo"] {
-    width: 100%;
-  }
-}
-
-/* ––––––––––––––––– SETTING ––––––––––––––––– */
-
-/* MAIL WIDHT AND MEDIAQUERIES */
-
-/* BORDER-RADIUS */
-
-/* DEFAULT MARGIN BOTTOM ON COLLAPSE */
-
-/* ROW WIDTH ON SIZE-S/M */
-
-/* ––––––––––––––––– COLOR-SETTINGS ––––––––––––––––– */
-
-/* ADD YOUR COLORS HERE */
-
-/* ––––––––––––––––– FONT-SETTINGS ––––––––––––––––– */
-
-/* FONTS -> SET THE FONTS VARIABLES WITH FALLBACK */
-
-/* ––––––––––––––––– WEBFONTS ––––––––––––––––– */
-
-@media screen and (max-width: 3000px) {
-  /* hides this rule from unsupported clients */
-
-  .roboto {
-    font-family: 'Roboto', arial, sans-serif !important;
-  }
-}
-
-/* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
-
-/* 	YOUT CAN USE 
-	Attributes: font-size, font-size-md, font-size-sm, font-color, 
-		font-weight, line-height, line-height-md, line-height-sm and letter-spacing
-	values: font-variable, px, %, em, color(xxxx)
-*/
-
-/* ––––––––––––––––– BUTTON-SETTINGS ––––––––––––––––– */
-
-/* .button */
-
-/* .button-2 */
-
-/* ––––––––––––––––– PADDINGS ––––––––––––––––– */
-
-.pad-left-10 {
-  padding-left: 10px;
-}
-
-.pad-left-20 {
-  padding-left: 20px;
-}
-
-.pad-left-40 {
-  padding-left: 40px;
-}
-
-.pad-right-10 {
-  padding-right: 10px;
-}
-
-.pad-right-20 {
-  padding-right: 20px;
-}
-
-.pad-right-40 {
-  padding-right: 40px;
-}
-
-.pad-top-10 {
-  padding-top: 10px;
-}
-
-.pad-top-15 {
-  padding-top: 15px;
-}
-
-.pad-top-20 {
-  padding-top: 20px;
-}
-
-.pad-bottom-10 {
-  padding-bottom: 10px;
-}
-
-.pad-bottom-15 {
-  padding-bottom: 15px;
-}
-
-.pad-bottom-20 {
-  padding-bottom: 20px;
-}
-
-.pad-bottom-40 {
-  padding-bottom: 40px;
-}
-
-.pad-bottom-50 {
-  padding-bottom: 50px;
-}
-
-.pad-bottom-70 {
-  padding-bottom: 70px;
-}
-
-.pad-bottom-100 {
-  padding-bottom: 100px;
-}
-
-@media (max-width: 520px) {
-  td .pad-sm-left-20 {
-    padding-left: 20px !important;
-  }
-
-  td .pad-sm-right-0 {
-    padding-right: 0px !important;
-  }
-
-  td .pad-sm-right-20 {
-    padding-right: 20px !important;
-  }
-
-  td .pad-sm-bottom-10 {
-    padding-bottom: 10px !important;
-  }
-
-  td .pad-sm-bottom-20 {
-    padding-bottom: 20px !important;
-  }
-
-  td .pad-sm-bottom-30 {
-    padding-bottom: 30px !important;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

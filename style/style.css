@@ -1,33 +1,17 @@
 @charset "UTF-8";
 /* ––––––––––––––––– SETTING ––––––––––––––––– */
-/* MAIL WIDHT AND MEDIAQUERIES */
-/* BORDER-RADIUS */
-/* DEFAULT MARGIN BOTTOM ON COLLAPSE */
-/* ROW WIDTH ON SIZE-S/M */
 /* ––––––––––––––––– COLOR-SETTINGS ––––––––––––––––– */
-/* ADD YOUR COLORS HERE */
 /* ––––––––––––––––– FONT-SETTINGS ––––––––––––––––– */
-/* FONTS -> SET THE FONTS VARIABLES WITH FALLBACK */
-/* ––––––––––––––––– WEBFONTS ––––––––––––––––– 
-@media (max-width: 3000px) {
-    @media screen {  // in a media-querie for not affecting unsopported clients
-        .roboto {
-           font-family: 'Roboto', arial, sans-serif !important;
-        }
-    }
+/* ––––––––––––––––– WEBFONTS ––––––––––––––––– */
+@media screen and (max-width: 3000px) {
+  .webfont {
+    font-family: 'Exo 2', sans-serif !important;
+  }
 }
-*/
-/* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
-/* 	YOUT CAN USE 
-	Attributes: font-size, font-size-md, font-size-sm, font-color, 
-		font-weight, line-height, line-height-md, line-height-sm and letter-spacing
-	values: font-variable, px, %, em, color(xxxx)
-*/
+/* ––––––––––––––––– FONT THEMES ––––––––––––––––– */
 /* ––––––––––––––––– BUTTON-SETTINGS ––––––––––––––––– */
-/* .button-1 */
-/* .button-2 */
 /* ––––––––––––––––– BREAKPOINT-MIXINS ––––––––––––––––– */
-/* ––––––––––––––––– FONT-SETTINGS 2 ––––––––––––––––– */
+/* ––––––––––––––––– GENERATE FONT CLASSES ––––––––––––––––– */
 .titel {
   font-family: Arial, sans-serif;
   font-size: 28px;
@@ -48,91 +32,7 @@
   }
 }
 
-.titel-lead {
-  font-family: Arial, sans-serif;
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 100%;
-  mso-line-height-alt: 100%;
-  mso-margin-top-alt: 0;
-  color: #000001;
-}
-@media (max-width: 620px) {
-  .titel-lead {
-    font-size: 20px !important;
-  }
-}
-@media (max-width: 620px) {
-  .titel-lead {
-    line-height: 100% !important;
-  }
-}
-
-.titel-2 {
-  font-family: Arial, sans-serif;
-  font-size: 26px;
-  font-weight: 500;
-  line-height: 115%;
-  mso-line-height-alt: 115%;
-  mso-margin-top-alt: 0;
-  color: #ba1c36;
-}
-@media (max-width: 620px) {
-  .titel-2 {
-    font-size: 22px !important;
-  }
-}
-@media (max-width: 620px) {
-  .titel-2 {
-    line-height: 115% !important;
-  }
-}
-
-.button-link {
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-@media (max-width: 620px) {
-  .button-link {
-    font-size: 15px !important;
-  }
-}
-
-.button-link-fr {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-@media (max-width: 620px) {
-  .button-link-fr {
-    font-size: 12px !important;
-  }
-}
-
-.wunschzettel {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 40px;
-  mso-line-height-alt: 40px;
-  mso-margin-top-alt: 0;
-  color: #000001;
-}
-@media (max-width: 620px) {
-  .wunschzettel {
-    font-size: 13px !important;
-  }
-}
-@media (max-width: 620px) {
-  .wunschzettel {
-    line-height: 40px !important;
-  }
-}
-
-.basic-1 {
+.basic {
   font-family: Arial, sans-serif;
   font-size: 17px;
   font-weight: 500;
@@ -142,21 +42,16 @@
   color: #000001;
 }
 
-.basic-2 {
+.link {
   font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 150%;
-  mso-line-height-alt: 150%;
-  mso-margin-top-alt: 0;
-  color: #7a7a7a;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
-
-.outside {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  color: #7a7a7a;
+@media (max-width: 620px) {
+  .link {
+    font-size: 15px !important;
+  }
 }
 
 /* ad td-selector before class-selector to make it more important on size-s */
@@ -172,51 +67,11 @@
 }
 
 @media (max-width: 520px) {
-  td .titel-lead {
-    font-size: 22px !important;
-  }
-}
-@media (max-width: 520px) {
-  td .titel-lead {
-    line-height: 100% !important;
-  }
-}
-
-@media (max-width: 520px) {
-  td .titel-2 {
-    font-size: 18px !important;
-  }
-}
-@media (max-width: 520px) {
-  td .titel-2 {
-    line-height: 115% !important;
-  }
-}
-
-@media (max-width: 520px) {
-  td .button-link {
+  td .link {
     font-size: 15px !important;
   }
 }
 
-@media (max-width: 520px) {
-  td .button-link-fr {
-    font-size: 12px !important;
-  }
-}
-
-@media (max-width: 520px) {
-  td .wunschzettel {
-    font-size: 13px !important;
-  }
-}
-@media (max-width: 520px) {
-  td .wunschzettel {
-    line-height: 40px !important;
-  }
-}
-
-/* ––––––––––––––––– DON'T TOUCH BELOW HERE ––––––––––––––––– */
 /* ––––––––––––––––– BASICS ––––––––––––––––– */
 body {
   margin: 0;
@@ -252,7 +107,7 @@ a {
   box-sizing: border-box;
 }
 
-/* ––––––––––––––––– COLORS ––––––––––––––––– */
+/* ––––––––––––––––– GENERATE COLOR-CLASSES ––––––––––––––––– */
 .color-black {
   color: #000001;
 }
@@ -277,44 +132,12 @@ a {
   background-color: #e6e6e6;
 }
 
-.color-dark-grey {
-  color: #7a7a7a;
+.color-yellow {
+  color: #ffff09;
 }
 
-.bg-color-dark-grey {
-  background-color: #7a7a7a;
-}
-
-.color-light-grey {
-  color: #ececec;
-}
-
-.bg-color-light-grey {
-  background-color: #ececec;
-}
-
-.color-red {
-  color: #ba1c36;
-}
-
-.bg-color-red {
-  background-color: #ba1c36;
-}
-
-.color-brown {
-  color: #8c8274;
-}
-
-.bg-color-brown {
-  background-color: #8c8274;
-}
-
-.color-brown-bg {
-  color: #e0dede;
-}
-
-.bg-color-brown-bg {
-  background-color: #e0dede;
+.bg-color-yellow {
+  background-color: #ffff09;
 }
 
 /* ––––––––––––––––– COLUMN SETTINGS ––––––––––––––––– */
@@ -323,8 +146,8 @@ a {
 }
 
 .row-padding {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .row {
@@ -398,24 +221,27 @@ a {
   [class*='spacer-'] {
     display: block !important;
     width: 100% !important;
-    height: 20px;
+    height: 60px;
   }
 }
 /* ––––––––––––––––– IMAGE-SETTINGS ––––––––––––––––– */
-img.auto-width {
-  width: auto !important;
+td img {
+  width: 100%;
+  height: auto !important;
 }
 
-/* SIZE-M */
 @media (max-width: 620px) {
-  img.m-auto-width {
-    width: auto !important;
+  td img {
+    max-width: 100% !important;
+    height: auto !important;
   }
-}
-/* SIZE-S */
-@media (max-width: 520px) {
-  img.s-auto-width {
-    width: auto !important;
+
+  td.img-full-width a {
+    width: 100% !important;
+  }
+
+  td.img-max-width img {
+    max-width: 100% !important;
   }
 }
 /* ––––––––––––––––– BORDER-RADIUS ––––––––––––––––– */
@@ -427,9 +253,9 @@ img.auto-width {
 
 /* ––––––––––––––––– BUTTON ––––––––––––––––– */
 .button-1 {
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-radius: 0px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .button-2 {
@@ -440,11 +266,11 @@ img.auto-width {
 
 @media (max-width: 620px) {
   .button-1 {
-    width: 210px;
+    width: 170px;
   }
 
   .button-2 {
-    width: 210px;
+    width: 60px;
   }
 }
 @media (max-width: 520px) {
@@ -453,11 +279,11 @@ img.auto-width {
   }
 
   .button-1 {
-    width: 220px;
+    width: 160px;
   }
 
   .button-2 {
-    width: 210px;
+    width: 60px;
   }
 }
 /* ––––––––––––––––– LINKS STYLING ––––––––––––––––– */
@@ -641,23 +467,13 @@ strong, b, .strong {
     /*  padding-left: 0 !important; */
     /*  padding-right: 0 !important; */
   }
-
-  [class*='col-']:not(.keep-img) img {
-    width: 100%;
-    height: auto !important;
-  }
-
-  .keep-img-md img {
-    width: inherit !important;
-    height: auto !important;
-  }
 }
 /* =============================================
    SIZE S
    ============================================= */
 @media (max-width: 520px) {
   table.row {
-    width: 100% !important;
+    width: 92% !important;
   }
 
   [class*='col-'] {
@@ -731,11 +547,6 @@ strong, b, .strong {
   .s1c {
     float: left;
     width: 8.3333333333% !important;
-  }
-
-  .keep-img-sm img {
-    width: inherit !important;
-    height: auto !important;
   }
 }
 /* ––––––––––––––––– PADDINGS ––––––––––––––––– */
@@ -1565,10 +1376,6 @@ div, p, a, li, td {
    mso-margin-top-alt: inherit !important;
 }
 */
-.body {
-  background-color: #FFFFFE;
-}
-
 @media (max-width: 355px) {
   img[alt="logo"] {
     width: 100%;

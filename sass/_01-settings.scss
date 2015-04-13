@@ -1,37 +1,35 @@
 /* ––––––––––––––––– SETTING ––––––––––––––––– */
 
 
-/* MAIL WIDHT AND MEDIAQUERIES */
+// MAIL WIDHT AND MEDIAQUERIES 
 $nl-widht: 600px;
 $breakpoint-1: 620px;
 $breakpoint-2: 520px;
 
-/* BORDER-RADIUS */
+// BORDER-RADIUS > USE THIS AS CLASS .border-radius (INCLUDING VENDOR-PREFIXES)
 $border-raduis: 20px;
 
-/* DEFAULT MARGIN BOTTOM ON COLLAPSE */
-$h-space: 20px;
+// DEFAULT MARGIN BOTTOM WHEN COLLAPSED
+$h-space: 60px;
 
-/* ROW WIDTH ON SIZE-S/M */
+// ROW WIDTH ON SIZE-S/M 
 $row-width-m: 92%;
-$row-width-s: 100%;
+$row-width-s: 92%;
 
 
 /* ––––––––––––––––– COLOR-SETTINGS ––––––––––––––––– */
 
 
-/* ADD YOUR COLORS HERE */
+// ADD YOUR COLORS HERE
+// Use them as class for color or background-color: .color-xxx // .bg-color-xxx
 $colors: (
 	black:      #000001,
 	white:      #FFFFFE,
 	grey:       #e6e6e6,
-	dark-grey:  #7a7a7a,
-	light-grey: #ececec,
-	red:        #ba1c36,
-    brown:      #8c8274,
-	brown-bg:   #e0dede,
+	yellow:     #ffff09,
 );
 
+// DO NOT CHANGE -> FUNCTION FOR COLOR SHORTCODE ACCESS 
 @function color($key) {
   @if not map-has-key($colors, $key) {
     @warn "Key `#{$key}` not found in $colors map.";
@@ -43,29 +41,31 @@ $colors: (
 /* ––––––––––––––––– FONT-SETTINGS ––––––––––––––––– */
 
 
-/* FONTS -> SET THE FONTS VARIABLES WITH FALLBACK */
+// FONTS -> SET THE FONTS VARIABLES WITH FALLBACK 
 $arial: Arial, sans-serif;
 $helvetica: Helvetica, sans-serif;
 $verdana: 'Verdana', sans-serif;
 $times: 'Times New Roman', Times, serif;
 
 
-/* ––––––––––––––––– WEBFONTS ––––––––––––––––– 
+/* ––––––––––––––––– WEBFONTS ––––––––––––––––– */
+
+// IN MEDIA QUERIES -> PREVENTS THE CLASS TO DEFINED IN UNSUPPORTED MAILING-CLIENTS
 @media (max-width: 3000px) {
-    @media screen {  // in a media-querie for not affecting unsopported clients
-        .roboto {
-           font-family: 'Roboto', arial, sans-serif !important;
+    @media screen {
+        .webfont {
+			font-family: 'Exo 2', sans-serif !important;
         }
     }
 }
-*/
 
-/* CREATE FONT STYLE WITH SPECIFICATIONS HERE */
-/* 	YOUT CAN USE 
-	Attributes: font-size, font-size-md, font-size-sm, font-color, 
-		font-weight, line-height, line-height-md, line-height-sm and letter-spacing
-	values: font-variable, px, %, em, color(xxxx)
-*/
+/* ––––––––––––––––– FONT THEMES ––––––––––––––––– */
+
+// CREATE FONT STYLE WITH SPECIFICATIONS HERE 
+// YOUT CAN USE:
+// Attributes: font-size, font-size-md, font-size-sm, font-color, font-weight, line-height, line-height-md, line-height-sm and letter-spacing
+// values: font-variable, px, %, em, color(xxxx)
+
 $fontthemes: (
 	titel: (
 		font-family: $arial,
@@ -78,29 +78,14 @@ $fontthemes: (
 		line-height-sm: 100%, 
 		font-color: color(black)
     ),
-	titel-lead: (
-		font-family: $arial,
-		font-size: 23px, 
-		font-weight: 700, 
-		font-size-md: 20px, 
-		font-size-sm: 22px,
-		line-height: 100%, 
-		line-height-md: 100%, 
-		line-height-sm: 100%, 
+	basic: (
+		font-family: $arial, 
+		font-size: 17px,
+		font-weight: 500,
+		line-height: 150%,
 		font-color: color(black)
     ),
-	titel-2: (
-		font-family: $arial,
-		font-size: 26px, 
-		font-weight: 500, 
-		font-size-md: 22px, 
-		font-size-sm: 18px,
-		line-height: 115%, 
-		line-height-md: 115%, 
-		line-height-sm: 115%, 
-		font-color: color(red)
-    ),
-	button-link: (
+	link: (
 		font-family: $arial,
 		font-size: 15px, 
 		font-weight: 300, 
@@ -108,59 +93,22 @@ $fontthemes: (
 		font-size-sm: 15px,
 		letter-spacing: 1px, 
     ),
-	button-link-fr: (
-		font-family: $arial,
-		font-size: 12px, 
-		font-weight: 300, 
-		font-size-md: 12px, 
-		font-size-sm: 12px,
-		letter-spacing: 1px, 
-    ),
-	wunschzettel: (
-		font-family: $arial,
-		font-size: 13px, 
-		font-weight: 500, 
-		font-size-md: 13px, 
-		font-size-sm: 13px,
-		line-height: 40px, 
-		line-height-md: 40px, 
-		line-height-sm: 40px, 
-		font-color: color(black)
-    ),
-	basic-1: (
-		font-family: $arial, 
-		font-size: 17px,
-		font-weight: 500,
-		line-height: 150%,
-		font-color: color(black)
-    ),
-	basic-2: (
-		font-family: $arial, 
-		font-size: 14px, 
-		font-weight: normal,
-		line-height: 150%, 
-		font-color: color(dark-grey)
-    ),
-	outside: (
-		font-family: $arial, 
-		font-size: 12px, 
-		font-weight: normal, 
-		font-color: color(dark-grey)
-    ),
 );
 
 
 
 /* ––––––––––––––––– BUTTON-SETTINGS ––––––––––––––––– */
 
-/* .button-1 */
-$btn-width-md: 210px;
-$btn-width-sm: 220px;
-$btn-border-radius: 0px;
+// IMPORTANT: DEFINE THE BUTTON-SIZE ALSO IN THE INDEX.HTML FILE
 
-/* .button-2 */
-$btn2-width-md: 210px;
-$btn2-width-sm: 210px;
+// .button-1
+$btn-width-md: 170px;
+$btn-width-sm: 160px;
+$btn-border-radius: 6px;
+
+// .button-2
+$btn2-width-md: 60px;
+$btn2-width-sm: 60px;
 $btn2-border-radius: 0px;
 
 
