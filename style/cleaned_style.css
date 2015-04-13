@@ -122,6 +122,14 @@ a {
 
 /* ––––––––––––––––– GENERATE COLOR-CLASSES ––––––––––––––––– */
 
+.bg-color-grey-middle {
+  background-color: #e6e6e6;
+}
+
+.bg-color-yellow {
+  background-color: #ffff09;
+}
+
 /* ––––––––––––––––– COLUMN SETTINGS ––––––––––––––––– */
 
 .outer-row {
@@ -150,10 +158,6 @@ a {
 
 .col-8-span {
   width: 66.666666666%;
-}
-
-.col-6-span {
-  width: 50%;
 }
 
 .col-4-span {
@@ -202,6 +206,12 @@ td img {
    CHANGE ALIGN
    ============================================= */
 
+@media (max-width: 520px) {
+  td .align-sm-center {
+    text-align: center !important;
+  }
+}
+
 /* =============================================
    CHANGE WIDTH
    ============================================= */
@@ -241,6 +251,16 @@ td img {
   padding-right: 20px;
 }
 
+@media (max-width: 520px) {
+  td .pad-sm-right-0 {
+    padding-right: 0px !important;
+  }
+
+  td .pad-sm-bottom-20 {
+    padding-bottom: 20px !important;
+  }
+}
+
 /* APPLE MAIL */
 
 /* REMOVE BLUE COLOR ON LINKS, PHONE AND ADDRESS */
@@ -273,5 +293,3 @@ td {
    mso-margin-top-alt: inherit !important;
 }
 */
-
-/*# sourceMappingURL=style.css.map */

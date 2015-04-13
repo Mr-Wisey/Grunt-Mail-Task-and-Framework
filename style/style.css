@@ -117,18 +117,18 @@ a {
 }
 
 .color-white {
-  color: #FFFFFE;
+  color: #fffffe;
 }
 
 .bg-color-white {
-  background-color: #FFFFFE;
+  background-color: #fffffe;
 }
 
-.color-grey {
+.color-grey-middle {
   color: #e6e6e6;
 }
 
-.bg-color-grey {
+.bg-color-grey-middle {
   background-color: #e6e6e6;
 }
 
@@ -1381,5 +1381,3 @@ div, p, a, li, td {
     width: 100%;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

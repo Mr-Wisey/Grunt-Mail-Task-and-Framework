@@ -90,11 +90,20 @@ display: block !important; border: 0; height: auto; line-height: 100%; outline: 
   }
 }
 @media (max-width: 520px) {
+  td .align-sm-center {
+    text-align: center !important;
+  }
   table.row {
     width: 92% !important;
   }
   [class*='col-'] {
     display: block !important; width: 100% !important;
+  }
+  td .pad-sm-right-0 {
+    padding-right: 0px !important;
+  }
+  td .pad-sm-bottom-20 {
+    padding-bottom: 20px !important;
   }
 }
 @media (max-width: 3000px) {
@@ -110,7 +119,9 @@ display: block !important; border: 0; height: auto; line-height: 100%; outline: 
         <tr>
             <td align="center" style="-webkit-text-size-adjust: none">
 
-
+    <table class="" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" class="bg-color-yellow" style="-webkit-text-size-adjust: none; background: #ffff09" bgcolor="#ffff09">
 
                 <!-- ROW -->
 				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
@@ -137,17 +148,17 @@ display: block !important; border: 0; height: auto; line-height: 100%; outline: 
                 <!-- ROW -->
 				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
                     <tr>
-                        <td class="row-padding" align="center" style="-webkit-text-size-adjust: none; padding-bottom: 30px; padding-top: 30px">
+                        <td class="row-padding bg-color-grey-middle " align="center" style="-webkit-text-size-adjust: none; background: #e6e6e6; padding-bottom: 30px; padding-top: 30px" bgcolor="#e6e6e6">
                             <table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
                                 <tr>
                                     <!-- COL -->
-                                    <td class="col-4-span pad-right-20 " valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; padding-right: 20px; width: 33.333333333%">
+                                    <td class="col-4-span bg-color-grey-middle pad-right-20 pad-sm-right-0 pad-sm-bottom-20 align-sm-center" valign="top" align="left" style="-webkit-text-size-adjust: none; background: #e6e6e6; box-sizing: border-box; padding-right: 20px; width: 33.333333333%" bgcolor="#e6e6e6">
 										<!-- IMAGE-LINK -->
 										<a href="xxxx" style="-webkit-text-size-adjust: none; display: inline-block; line-height: 0; text-decoration: none" target="_blank">
 										    <img class="" alt="xxxx" src="http://placehold.it/180x180" width="180" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block !important; height: auto !important; line-height: 100%; outline: none; text-decoration: none; width: 100%" />
 										</a>
                                     </td>
-                                    <td class="col-8-span" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; width: 66.666666666%">
+                                    <td class="col-8-spanalign-sm-center" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reprehenderit numquam blanditiis voluptatem, recusandae harum veniam impedit, perferendis libero debitis minus, similique dolores veritatis. Vero labore explicabo, doloremque qui tempora!
                                     </td>
                                     <!-- END COL -->
@@ -172,7 +183,7 @@ display: block !important; border: 0; height: auto; line-height: 100%; outline: 
 										</a>
                                     </td>
                                     <td class="col-8-span" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; width: 66.666666666%">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reprehenderit numquam blanditiis voluptatem, recusandae harum veniam impedit, perferendis libero debitis minus, similique dolores veritatis. Vero labore explicabo, doloremque qui tempora!
+                                        Image full width: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reprehenderit numquam blanditiis voluptatem, recusandae harum veniam impedit, perferendis libero debitis minus, similique dolores veritatis. Vero labore explicabo, doloremque qui tempora!
                                     </td>
                                     <!-- END COL -->
                                 </tr>
@@ -205,82 +216,11 @@ display: block !important; border: 0; height: auto; line-height: 100%; outline: 
                     </tr>
                 </table>
                 <!-- END ROW -->
-xxx
 
 
-                <!-- ROW -->
-				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
-                    <tr>
-                        <td class="row-padding" align="center" style="-webkit-text-size-adjust: none; padding-bottom: 30px; padding-top: 30px">
-                            <table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
-                                <tr>
-                                    <!-- COL -->
-                                    <td class="col-4-span pad-right-20 img-full-width" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; padding-right: 20px; width: 33.333333333%">
-										<!-- IMAGE-LINK -->
-										    <img class="" alt="xxxx" src="http://placehold.it/180x180" width="180" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block !important; height: auto !important; line-height: 100%; outline: none; text-decoration: none; width: 100%" />
-                                    </td>
-                                    <td class="col-8-span" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; width: 66.666666666%">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reprehenderit numquam blanditiis voluptatem, recusandae harum veniam impedit, perferendis libero debitis minus, similique dolores veritatis. Vero labore explicabo, doloremque qui tempora!
-                                    </td>
-                                    <!-- END COL -->
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                <!-- END ROW -->
-
-                <!-- ROW -->
-				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
-                    <tr>
-                        <td class="row-padding" align="center" style="-webkit-text-size-adjust: none; padding-bottom: 30px; padding-top: 30px">
-                            <table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
-                                <tr>
-                                    <!-- COL -->
-                                    <td class="col-9-span pad-right-20 img-max-width" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; padding-right: 20px; width: 75%">
-										<!-- IMAGE-LINK -->
-										    <img class="" alt="xxxx" src="http://placehold.it/350x180" width="350" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block !important; height: auto !important; line-height: 100%; outline: none; text-decoration: none; width: 100%" />
-                                    </td>
-                                    <td class="col-3-span" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; width: 25%">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium reprehenderit numquam blanditiis voluptatem, recusandae harum veniam impedit, perferendis libero debitis minus, similique dolores veritatis. Vero labore explicabo, doloremque qui tempora!
-                                    </td>
-                                    <!-- END COL -->
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                <!-- END ROW -->
-
-
-
-                <!-- ROW -->
-				<table class="outer-row" border="0" cellpadding="0" cellspacing="0" style="width: 100%">
-                    <tr>
-                        <td class="row-padding" align="center" style="-webkit-text-size-adjust: none; padding-bottom: 30px; padding-top: 30px">
-                            <table class="row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 600px">
-                                <tr>
-                                    <!-- COL -->
-                                    <td class="col-6-span" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; width: 50%">
-										<!-- IMAGE-LINK -->
-										<a href="xxxx" style="-webkit-text-size-adjust: none; line-height: 0; text-decoration: none" target="_blank">
-										    <img alt="xxxx" src="http://placehold.it/300x300" width="300" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block !important; height: auto !important; line-height: 100%; outline: none; text-decoration: none; width: 100%" />
-										</a>
-                                    </td>
-                                    <td class="col-6-span" valign="top" align="left" style="-webkit-text-size-adjust: none; box-sizing: border-box; width: 50%">
-										<!-- IMAGE-LINK -->
-										<a href="xxxx" style="-webkit-text-size-adjust: none; line-height: 0; text-decoration: none" target="_blank">
-										    <img alt="xxxx" src="http://placehold.it/300x300" width="300" border="0" style="-ms-interpolation-mode: bicubic; border: 0; display: block !important; height: auto !important; line-height: 100%; outline: none; text-decoration: none; width: 100%" />
-										</a>
-                                    </td>
-                                    <!-- END COL -->
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-                <!-- END ROW -->
-
+            </td>
+        </tr>
+    </table>
 
             </td>
         </tr>
