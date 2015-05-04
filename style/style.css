@@ -117,11 +117,11 @@ a {
 }
 
 .color-white {
-  color: #fffffe;
+  color: #FFFFFE;
 }
 
 .bg-color-white {
-  background-color: #fffffe;
+  background-color: #FFFFFE;
 }
 
 .color-grey-middle {
@@ -1381,3 +1381,5 @@ div, p, a, li, td {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

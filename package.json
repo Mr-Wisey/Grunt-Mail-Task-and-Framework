@@ -2,11 +2,11 @@
   "name": "responsive-nl",
   "version": "0.0.1",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-sass": "^0.8.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-sass": "~0.8.1",
     "grunt-contrib-watch": "~0.4.4",
-    "grunt-premailer": "^0.2.10",
-    "grunt-uncss": "^0.3.6",
-    "grunt-processhtml": "^0.3.3"
+    "grunt-premailer": "~0.2.10",
+    "grunt-uncss": "~0.3.6",
+    "grunt-processhtml": "~0.3.3"
   }
 }
